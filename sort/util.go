@@ -9,11 +9,9 @@ import (
 
 func CheckSort(t *testing.T, f func([]int) []int) {
 	inputs := [][]int{
-		rand.Perm(20),
-		rand.Perm(20),
-		rand.Perm(20),
-		rand.Perm(20),
-		rand.Perm(20),
+		rand.Perm(15),
+		rand.Perm(30),
+		rand.Perm(50),
 	}
 	for i, input := range inputs {
 		t.Run(fmt.Sprintf("pattern: %d", i), func(t *testing.T) {
