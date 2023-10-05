@@ -18,6 +18,8 @@ func partition(input []int, l, r int) int {
 	pivot := input[r]
 	i, j := l-1, r
 	for {
+		// init → condition → increment → condition → increment → ...
+		// https://go-tour-jp.appspot.com/flowcontrol/1
 		for i++; input[i] < pivot; i++ {
 		}
 		for j--; i < j && input[j] > pivot; j-- {
