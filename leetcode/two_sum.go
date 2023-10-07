@@ -1,6 +1,6 @@
 package leetcode
 
-func twoSum1(nums []int, target int) []int {
+func TwoSum1(nums []int, target int) []int {
 	// 値から見つけるべき値が分かる
 	// そして、その値に対応するインデックスが分かれば良い
 	// したがって、値とインデックスのハッシュテーブルを用いるとO(1)で対応するインデックスが分かる
@@ -28,7 +28,7 @@ func twoSum1(nums []int, target int) []int {
 	return nil
 }
 
-func twoSum2(nums []int, target int) []int {
+func TwoSum2(nums []int, target int) []int {
 	for i := 0; i < len(nums); i++ {
 		for j := 0; j < len(nums); j++ {
 			if i == j {

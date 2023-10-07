@@ -29,7 +29,7 @@ func TestTwoSum(t *testing.T) {
 	}
 	for _, test := range tests {
 		t.Run(fmt.Sprintf("target: %d, nums: %v", test.target, test.nums), func(t *testing.T) {
-			output := twoSum1(test.nums, test.target)
+			output := TwoSum1(test.nums, test.target)
 			t.Log(output)
 			if len(output) != 2 || test.nums[output[0]]+test.nums[output[1]] != test.target {
 				t.Fatal()
